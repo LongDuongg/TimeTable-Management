@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.css">
+    <script src="https://kit.fontawesome.com/99958fa2ed.js" crossorigin="anonymous"></script>
+    <title>Giáo Viên</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i>Danh <span class="text-primary">Sách </span>Giáo Viên</h1>
+        <form id="teacher-form">
+            <div class="form-group">
+                <input type="text" id="id" placeholder="ID..." class="form-control">
+            </div> 
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Họ và Tên..." class="form-control">
+            </div> 
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="Môn Học..." class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="phoneNumber" placeholder="Số Điện Thoại..." class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="email" placeholder="Email..." class="form-control">
+            </div> 
+            <input type="submit" value="add" class="btn btn-block btn-primary">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Họ và Tên</th>
+                    <th>Môn Học</th>
+                    <th>SĐT</th>
+                    <th>Email</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="teacher-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="Teacher.js"></script>
+</body>
+</html>
